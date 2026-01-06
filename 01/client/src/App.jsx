@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes ,useLocation } from "react-router-dom";
-import Toaster  from "sonner";
+import { Toaster }  from "sonner";
 import Login  from "./pages/login"
 import TaskDetail from "./pages/TaskDetail";
 import Tasks  from "./pages/Tasks";
@@ -32,6 +32,7 @@ function Layout() {
     <Navigate to='/log-in' state={{ from: location }} replace />
   )
 }
+
 function App() {   
   return (
       <main className='w-full min-h-screen  bg-[#f3f4f6]'>
@@ -45,15 +46,15 @@ function App() {
                     <Route path='/todo/:status >'  element={/Task /} />
                     <Route path='/team >'  element={/Users /} />
                     <Route path='/trash >'  element={/Trash /} />
-                    <Route path='/task/:id >'  element={/TaskDetails /} />
-                    <Route path='/log-in' element={<Login />} />
+                    <Route path='/task/:id >'  element={/TaskDetails /} />                    
                 </Route>
 
+                <Route path='/log-in' element={<Login />} />
             </Routes>
+
             <Toaster richColors position='top-center' />
         </main>
-        )
-    
+        )  
 }
 
 export default App
