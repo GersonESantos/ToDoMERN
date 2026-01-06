@@ -1,14 +1,15 @@
 import { Navigate, Route, Routes ,useLocation } from "react-router-dom";
 import Toaster  from "sonner";
+import StatusPage  from "./pages/statusPage";
 import Login  from "./pages/login"
 import TaskDetail from "./pages/TaskDetail";
-import Tasks  from "./pages/Tasks";
+import Tasks  from "./pages/tasks";
 import Trash  from "./pages/Trash";
 import Users  from "./pages/users";
 import Dashboard  from "./pages/dashboard";
 
 function Layout() {
-  const  user  = "";
+  const { user } = useSelector((state) => state.auth);
   const location = useLocation();
   return user ? (
    <div className="w-full h-screen flex flex-col md:flex-row">
@@ -29,10 +30,14 @@ function Layout() {
      </div>
    </div>
   ):(
+    
     <Navigate to='/log-in' state={{ from: location }} replace />
   )
+
 }
-function App() {   
+
+function App() {
+    
   return (
       <main className='w-full min-h-screen  bg-[#f3f4f6]'>
             <Routes>
