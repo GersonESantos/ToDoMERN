@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes ,useLocation } from "react-router-dom";
 import { Toaster }  from "sonner";
-import Login  from "./pages/login"
-import TaskDetail from "./pages/TaskDetail";
-import Tasks  from "./pages/Tasks";
-import Trash  from "./pages/Trash";
-import Users  from "./pages/users";
-import Dashboard  from "./pages/dashboard";
+import { Login}  from "./pages/login"
+import { TaskDetail } from "./pages/TaskDetail";
+import { Tasks }  from "./pages/Tasks";
+import { Trash }  from "./pages/Trash";
+import { Users } from "./pages/users";
+import { Dashboard }  from "./pages/dashboard";
 
 function Layout() {
   const  user  = "";
