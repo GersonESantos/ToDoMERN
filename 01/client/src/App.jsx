@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes ,useLocation } from "react-router-dom";
 import { Toaster }  from "sonner";
-import { Login}  from "./pages/login"
+import  Login  from "./pages/login"
 import { TaskDetail } from "./pages/TaskDetail";
 import { Tasks }  from "./pages/Tasks";
 import { Trash }  from "./pages/Trash";
@@ -29,7 +29,7 @@ function Layout() {
      </div>
    </div>
   ):(
-    <Navigate to='/log-in' state={{ from: location }} replace />
+    <Navigate to='/login' state={{ from: location }} replace />
   )
 }
 
