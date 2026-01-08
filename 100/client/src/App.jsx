@@ -8,6 +8,9 @@ import Trash from './pages/Trash.jsx'
 import TaskDetails from './pages/TaskDetails.jsx'
 
 
+
+
+
 function App() {
   return (
    <main className='w-full min-h-screen  bg-[#f3f4f6]'>
@@ -24,7 +27,7 @@ function App() {
                     <Route path='/task/:id >'  element={/TaskDetails /} />                    
                 </Route>
 
-                <Route path='/log-in' element={<TaskDetails />} />
+                <Route path='/log-in' element={<Login />} />
             </Routes>
 
             <Toaster richColors position='top-center' />
