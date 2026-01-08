@@ -41,7 +41,7 @@ function App() {
    <main className='w-full min-h-screen  bg-[#f3f4f6]'>
             <Routes>
                 <Route element={<Layout />}>
-                    <Route path="/" element={<Navigate to="/dashboard" />} />
+                  <Route index path="/" element={<Navigate to="/dashboard" />} />
                     <Route path='/dashboard >'  element={/Dashbord /} />
                     <Route path='/task >'  element={/Task /} />
                     <Route path='/completed/:status >'  element={/Task /} />
@@ -57,7 +57,7 @@ function App() {
 
             
         </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
