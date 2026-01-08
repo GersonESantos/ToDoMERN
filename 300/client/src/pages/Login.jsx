@@ -17,6 +17,9 @@ const Login = () => {
         console.log("sumit");
     };
 
+
+
+
     useEffect(() => {
         user && navigate("/dashboard");
     }, [user]);
@@ -40,15 +43,15 @@ const Login = () => {
                     </div>
                 </div>
                 {/* right side */}
-               <div className="w-full md-1/3 p-4 md:p-1 flex flex-col justify-center items-center">                 
-                     <form onSubmit={handleSubmit(submitHabndler)}
+            <div className="w-full md-1/3 p-4 md:p-1 flex flex-col justify-center items-center">                 
+                 {/* <form onSubmit={handleSubmit(submitHabndler)}
                     className='form-container w-full md:w-100 flex flex-col gap-y-8 bg-white dark:bg-slate-900 px-10 pt-14 pb-14'
                     >
                         <div className="">
                             <p className=" text-blue-600 text-3xl font-bold text-center">
                                 Bem Vindo de volta!
                             </p>
-                            <p className="text-center text-base text-gray-700">
+                            <p className="text-center text-base text-gray-700 dark:text-gray-500">
                                 Entre na sua conta para continuar
                             </p>
                         </div>
@@ -63,10 +66,22 @@ const Login = () => {
                             })}
                             error={errors.email? errors.email.message : ""}
                             /> 
-                            </div>   
-                        </form> 
-
-                       
+                            <Textbox
+                placeholder='password'
+                type='password'
+                name='password'
+                label='Password'
+                className='w-full rounded-full'
+                register={register("password", {
+                  required: "Password is required!",
+                })}
+                error={errors.password ? errors.password?.message : ""}
+              />
+              <span className='text-sm text-gray-600 hover:underline cursor-pointer'>
+                Forget Password?
+              </span>
+                        </div>   
+            </form>                    */}
                 </div>
             </div>
         </div>
