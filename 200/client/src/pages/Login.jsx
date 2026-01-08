@@ -29,10 +29,14 @@ const Login = () => {
                         <span>Cloud-Base</span>
                         <span>Task Management</span>
                        </p>
+                       <div className=" "> 
+                        <div className="ciccle rotate-in-up-left "></div>
+
+                       </div>
                     </div>
                 </div>
                 {/* right side */}
-               <div>
+               <div className="w-full md-1/3 p-4 md:p-1 flex flex-col justify-center items-center">
 
                 </div>
             </div>
