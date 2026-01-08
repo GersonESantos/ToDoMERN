@@ -32,19 +32,20 @@ function Layout() {
 }
 
 
-
-
-
 function App() {
   return (
-   <main className='w-full min-h-screen  bg-[#f3f4f6]'>     
-      
-       
-            <Login />     
-      
-      
-      </main>
+    <main className="w-full min-h-screen bg-[#f3f4f6]">
+      <Login />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Layout />} />
+          <Route path="/" element={<Navigate to="/dashboard" />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
-};
+}
+
+
 
 export default App;
