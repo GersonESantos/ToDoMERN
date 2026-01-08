@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -29,7 +30,7 @@ const Login = () => {
                         <span>Cloud-Base</span>
                         <span>Task Management</span>
                        </p>
-                       <div className=" "> 
+                       <div className="cell"> 
                         <div className="ciccle rotate-in-up-left "></div>
 
                        </div>
