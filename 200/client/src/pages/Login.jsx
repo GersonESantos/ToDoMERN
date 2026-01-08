@@ -51,7 +51,7 @@ const Login = () => {
                             <p className=" text-blue-600 text-3xl font-bold text-center">
                                 Bem Vindo de volta!
                             </p>
-                            <p className="text-center text-base text-gray-700">
+                            <p className="text-center text-base text-gray-700 dark:text-gray-500">
                                 Entre na sua conta para continuar
                             </p>
                         </div>
