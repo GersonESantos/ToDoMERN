@@ -31,7 +31,7 @@ const Login = () => {
                 <div className="h-full w-full lg:w-2/3 flex items-center justify-center">
                    <div className="w-full md:max-w-lg 2xl:max-3x1 flex flex-col items-center justify-center gap-5 md:gap-10 2x1: mt-20" >
                       <span className="flex gap-1 py-1 px-3 border rounded-full text-sm md:text-base bordergray-300 text-gray-600">
-                        Manage all your task in one place! 
+                        Gerencie todas as suas tarefas em um só lugar! 
                        </span>
                        <p className="flex flex-col gap-0 md:gap-4 text-4xl md:text-6xl 2x1:text-7xl font-back text-center text-blue-700">
                         <span>Cloud-based</span>

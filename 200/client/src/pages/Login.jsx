@@ -1,3 +1,4 @@
+//200/client/src/pages/Login.jsx
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -27,11 +28,11 @@ const Login = () => {
         <div className='h-full w-full lg:w-2/3 flex flex-col items-center justify-center'>
           <div className='w-full md:max-w-lg 2xl:max-w-3xl flex flex-col items-center justify-center gap-5 md:gap-y-10 2xl:-mt-20'>
             <span className='flex gap-1 py-1 px-3 border rounded-full text-sm md:text-base dark:border-gray-700 dark:text-blue-400 border-gray-300 text-gray-600'>
-              Manage all your task in one place!
+              Gerencie todas as suas tarefas em um só lugar!
             </span>
             <p className='flex flex-col gap-0 md:gap-4 text-4xl md:text-6xl 2xl:text-7xl font-black text-center dark:text-gray-400 text-blue-700'>
-              <span>Cloud-based</span>
-              <span>Task Manager</span>
+              <span>Baseado na Nuven</span>
+              <span>Gerenciador De Tarefas</span>
             </p>
 
             <div className='cell'>
@@ -40,17 +41,17 @@ const Login = () => {
           </div>
         </div>
 
-        <div className='w-full md:w-1/3 p-4 md:p-1 flex flex-col justify-center items-center'>
+        <div className='w-full md:w-2/3 lg:w-1/2 p-4 md:p-6 flex flex-col justify-center items-center'>
           <form
             onSubmit={handleSubmit(submitHabndler)}
-            className='form-container w-full md:w-10 flex flex-col gap-y-8 bg-white dark:bg-slate-900 px-10 pt-14 pb-14'
+            className='form-container w-full flex flex-col gap-y-8 bg-white dark:bg-slate-900 px-10 pt-14 pb-14 rounded-lg shadow-md'
           >
             <div>
               <p className='text-blue-600 text-3xl font-bold text-center'>
                 Welcome back!
               </p>
               <p className='text-center text-base text-gray-700 dark:text-gray-500'>
-                Keep all your credetials safe!
+                Gerencie todas as suas tarefas em um só lugar!
               </p>
             </div>
             <div className='flex flex-col gap-y-5'>
@@ -59,7 +60,7 @@ const Login = () => {
                 type='email'
                 name='email'
                 label='Email Address'
-                className='w-full rounded-full'
+                className='w-full rounded-full px-4'
                 register={register("email", {
                   required: "Email Address is required!",
                 })}
@@ -70,7 +71,7 @@ const Login = () => {
                 type='password'
                 name='password'
                 label='Password'
-                className='w-full rounded-full'
+                className='w-full rounded-full px-4'
                 register={register("password", {
                   required: "Password is required!",
                 })}
@@ -89,4 +90,3 @@ const Login = () => {
 };
 
 export default Login;
- 

@@ -1,3 +1,4 @@
+//200/client/src/pages/Login.jsx
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -40,17 +41,17 @@ const Login = () => {
           </div>
         </div>
 
-        <div className='w-full md:w-1/3 p-4 md:p-1 flex flex-col justify-center items-center'>
+        <div className='w-full md:w-2/3 lg:w-1/2 p-4 md:p-6 flex flex-col justify-center items-center'>
           <form
             onSubmit={handleSubmit(submitHabndler)}
-            className='form-container w-full md:w-10 flex flex-col gap-y-8 bg-white dark:bg-slate-900 px-10 pt-14 pb-14'
+            className='form-container w-full flex flex-col gap-y-8 bg-white dark:bg-slate-900 px-10 pt-14 pb-14 rounded-lg shadow-md'
           >
             <div>
               <p className='text-blue-600 text-3xl font-bold text-center'>
                 Welcome back!
               </p>
               <p className='text-center text-base text-gray-700 dark:text-gray-500'>
-                Keep all your credetials safe!
+                Keep all your credentials safe!
               </p>
             </div>
             <div className='flex flex-col gap-y-5'>
@@ -59,7 +60,7 @@ const Login = () => {
                 type='email'
                 name='email'
                 label='Email Address'
-                className='w-full rounded-full'
+                className='w-full rounded-full px-4'
                 register={register("email", {
                   required: "Email Address is required!",
                 })}
@@ -70,7 +71,7 @@ const Login = () => {
                 type='password'
                 name='password'
                 label='Password'
-                className='w-full rounded-full'
+                className='w-full rounded-full px-4'
                 register={register("password", {
                   required: "Password is required!",
                 })}
@@ -89,4 +90,3 @@ const Login = () => {
 };
 
 export default Login;
- 
