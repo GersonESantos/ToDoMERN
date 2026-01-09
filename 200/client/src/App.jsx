@@ -31,7 +31,7 @@ function Layout() {
   );
 }
 
-function App() {
+const App = () => {
   return (
    <main className='w-full min-h-screen  bg-[#f3f4f6]'>
             <Routes>
@@ -53,6 +53,6 @@ function App() {
             
         </main>
   );
-}
+};
 
 export default App;
