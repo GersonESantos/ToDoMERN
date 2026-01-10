@@ -5,7 +5,6 @@ import Tasks from './pages/Tasks.jsx'
 import Users from './pages/Users.jsx'
 import Trash from './pages/Trash.jsx'
 import Dashboard from "./pages/Dashboard.jsx"
-
 import DashLogin from './pages/DashLogin.jsx' 
 import { Toaster } from "sonner";
 
