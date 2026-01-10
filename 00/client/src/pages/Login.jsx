@@ -2,12 +2,15 @@ import React from 'react';
 
 const Login = () => {
   return (
-    <div className="p-4 space-y-6">
-      <h1 className="text-3xl text-red-500 font-bold underline">Hello world!</h1>
-      <pre
-        className="bg-gray-100 p-4 rounded-lg text-lg font-mono overflow-auto">
-      </pre>
-    </div>
+    <section>
+  <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+  <img class="size-12 shrink-0" src="../src/assets/Gersonfb2025.png" alt="ChitChat Logo" />
+  <div>
+    <div class="text-xl font-medium text-black dark:text-white">Gerson Eustaquio Dos Santos</div>
+    <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
+  </div>
+</div>
+</section>  
   );
 };
 
