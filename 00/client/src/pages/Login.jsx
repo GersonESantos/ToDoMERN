@@ -1,5 +1,5 @@
-//200/client/src/pages/Login.jsx
-import React, { useEffect } from "react";
+//00/client/src/pages/Login.jsx
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +7,7 @@ import Textbox from "../components/Textbox.jsx";
 import { Button, Loading } from "../components";
 const Login = () => {
   const user = "";
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -81,7 +82,7 @@ const Login = () => {
                 Forget Password?
               </span>
             </div>
-             {isLoading ? (
+            {isLoading ? (
               <Loading />
             ) : (
               <Button
