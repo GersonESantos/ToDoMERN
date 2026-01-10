@@ -5,13 +5,13 @@ import Tasks from './pages/Tasks.jsx'
 import Users from './pages/Users.jsx'
 import Trash from './pages/Trash.jsx'
 import Dashboard from "./pages/Dashboard.jsx"
-import DashLogin from './pages/DashLogin.jsx' 
 import { Toaster } from "sonner";
+import { Sidebar, MobileSidebar, Navbar } from "./components";
 
 
 function Layout() {
   const { user } = "";
-   const location = useLocation();
+  const location = useLocation();
   return user ? (
     <div className='w-full h-screen flex flex-col md:flex-row'>
       <div className='w-1/5 h-screen bg-white dark:bg-[#1f1f1f] sticky top-0 hidden md:block'>
