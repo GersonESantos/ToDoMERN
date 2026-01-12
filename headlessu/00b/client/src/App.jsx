@@ -1,4 +1,4 @@
-import Menu from "./pages/menu.jsx";
+import Login from "./pages/Menu.jsx";
 import Switch from "./pages/Switch.jsx";
 function App() {
   return (
