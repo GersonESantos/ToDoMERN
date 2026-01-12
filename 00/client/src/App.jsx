@@ -7,11 +7,10 @@ import Trash from './pages/Trash.jsx'
 import Dashboard from "./pages/Dashboard.jsx"
 import { Toaster } from "sonner";
 import { Sidebar, MobileSidebar, Navbar } from "./components";
-import { userSelector } from "react-redux";
 
 
 function Layout() {
-  const { user } = userSelector((state) => state.auth);
+  const { user } = "";
   const location = useLocation();
   return user ? (
     <div className='w-full h-screen flex flex-col md:flex-row'>
@@ -32,7 +31,9 @@ function Layout() {
   ) : (
     <Navigate to='/log-in' state={{ from: location }} replace />
   );
-} 
+}
+
+
 
 function App() {
   return (
