@@ -32,8 +32,24 @@ function Layout() {
   ) : (
     <Navigate to='/log-in' state={{ from: location }} replace />
   );
-} 
+}
 
+
+// const MobileSidebar = () => {
+//   const { isOpenSidebar } = useSelector((state) => state.auth);
+
+//   return (
+//     <div
+//       className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-20 md:hidden transition-transform duration-300 ${
+//         isOpenSidebar ? "translate-x-0" : "-translate-x-full"
+//       }`}
+//     >
+//       <div className='w-3/4 h-full bg-white dark:bg-[#1f1f1f] p-5'>
+//         <Sidebar />
+//       </div>
+//     </div>
+//   );
+// }
 function App() {
   return (
     <main className="w-full min-h-screen bg-white-500">
