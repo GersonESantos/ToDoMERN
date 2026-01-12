@@ -1,4 +1,9 @@
 @import "tailwindcss";
+.cell {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
 
 .circle {
   display: inline-block;
