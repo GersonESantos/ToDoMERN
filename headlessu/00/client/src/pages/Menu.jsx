@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -30,13 +31,14 @@ const Login = () => {
               <div className="px-1 py-1 ">
                 <Menu.Item>
                   {({ active }) => (
-                    <button
+                    <Link
+                      to="/login"
                       className={`${
                         active ? 'bg-violet-500 text-white' : 'text-gray-900'
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                     >
-                      Edit
-                    </button>
+                      Login
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
