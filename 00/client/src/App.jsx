@@ -10,7 +10,7 @@ import { Sidebar, MobileSidebar, Navbar } from "./components";
 import { useSelector } from "react-redux";
 
 function Layout() {
-  const { user } = useSelector((state) => state.auth);
+  const { user } = useSelector((state) => state.auth || {});
   const location = useLocation();
   return user ? (
     <div className='w-full h-screen flex flex-col md:flex-row'>
