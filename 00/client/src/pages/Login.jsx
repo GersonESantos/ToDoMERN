@@ -5,9 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 import Textbox from "../components/Textbox.jsx";
 import { Button, Loading } from "../components";
-import { useSelector } from "react-redux";
 const Login = () => {
-   const { user } = useSelector(state => state.auth); 
+  const user = "";
   const [isLoading, setIsLoading] = useState(false);
   const {
     register,
