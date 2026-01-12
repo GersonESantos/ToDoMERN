@@ -8,7 +8,6 @@ import Dashboard from "./pages/Dashboard.jsx"
 import { Toaster } from "sonner";
 import { Sidebar, MobileSidebar, Navbar } from "./components";
 
-
 function Layout() {
   const { user } = "";
   const location = useLocation();
