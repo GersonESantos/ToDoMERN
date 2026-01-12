@@ -7,11 +7,10 @@ import Trash from './pages/Trash.jsx'
 import Dashboard from "./pages/Dashboard.jsx"
 import { Toaster } from "sonner";
 import { Sidebar, MobileSidebar, Navbar } from "./components";
-import { useSelector } from "react-redux";
 
 
 function Layout() {
-   const { user } = useSelector((state) => state.auth);
+  const { user } = "";
   const location = useLocation();
   return user ? (
     <div className='w-full h-screen flex flex-col md:flex-row'>
