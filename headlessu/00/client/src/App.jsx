@@ -1,9 +1,13 @@
-import Login from './pages/Login.jsx'
-
+import Login from "./pages/Menu.jsx";
+import Switch from "./pages/Switch.jsx";
 function App() {
   return (
-    <Login />
-  )
+    <div>
+      <Menu />
+
+      <Switch />
+    </div>
+  );
 }
 
-export default App
+export default App;
