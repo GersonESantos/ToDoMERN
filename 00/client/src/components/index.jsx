@@ -5,6 +5,7 @@ import { Chart } from "./Chart";
 import ConfirmatioDialog, { UserAction } from "./ConfirmationDialog";
 import Loading from "./Loading";
 import ModalWrapper from "./ModalWrapper";
+import MobileSidebar from "./MobileSidebar";
 import Navbar from "./Navbar";
 import SelectList from "./SelectList";
 import Sidebar from "./Sidebar";
@@ -23,6 +24,7 @@ export {
   ConfirmatioDialog,
   Loading,
   ModalWrapper,
+  MobileSidebar,
   Navbar,
   SelectList,
   Sidebar,
