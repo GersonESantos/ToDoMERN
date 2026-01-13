@@ -1,5 +1,5 @@
 import React from 'react'
-
+import clsx from "clsx";
 import {
   MdAdminPanelSettings,
   MdKeyboardArrowDown,
@@ -9,12 +9,28 @@ import {
 
 import { FaNewspaper } from "react-icons/fa";
 import { FaArrowsToDot } from "react-icons/fa6";
-//import { LuClipboardEdit } from "react-icons/lu";
+import { LuClipboardEdit } from "react-icons/lu";
 //import moment from "moment";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    
+    <div className='w-full h-32 bg-white p-5 shadow-md rounded-md flex items-center justify-between'>
+      <div className='h-full flex flex-1 flex-col justify-between'>
+        <p className='text-base text-gray-600'>{label}</p>
+        <span className='text-2xl font-semibold'>{count}</span>
+        <span className='text-sm text-gray-400'>{"111 last month"}</span>
+      </div>
+      <div
+        className={clsx(
+          "w-10 h-10 rounded-full flex items-center justify-center text-white",
+          bg
+        )}
+      >
+        {icon}
+      </div>
+    </div>
+
   )
 }
 
