@@ -1,9 +1,5 @@
 import clsx from "clsx";
-import moment from "moment";
 import React, { useEffect } from "react";
-import { FaNewspaper } from "react-icons/fa";
-import { FaArrowsToDot } from "react-icons/fa6";
-import { LuClipboardEdit } from "react-icons/lu";
 
 import { Chart, Loading, UserInfo } from "../components";
 import { useGetDasboardStatsQuery } from "../redux/slices/api/taskApiSlice";
