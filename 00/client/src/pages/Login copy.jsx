@@ -2,13 +2,12 @@ import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
+import React, { useState } from 'react';
 import { Button, Loading, Textbox } from "../components";
-import { useLoginMutation } from "../redux/slices/api/authApiSlice";
-import { setCredentials } from "../redux/slices/authSlice";
 import { useEffect } from "react";
 
 const Login = () => {
-  const { user } = useSelector((state) => state.auth);
+  const { user } = useSelector((state) => state.auth); 
   const {
     register,
     handleSubmit,
@@ -17,17 +16,9 @@ const Login = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const [login, { isLoading }] = useLoginMutation();
-
-  const handleLogin = async (data) => {
-    try {
-      const res = await login(data).unwrap();
-
-      dispatch(setCredentials(res));
-      navigate("/");
-    } catch (err) {
-      toast.error(err?.data?.message || err.error);
-    }
+  const [isLoading, setIsLoading] = useState(false);
+  const submitHabndler = async (data) => {
+    console.log('submit');
   };
 
   useEffect(() => {
@@ -35,7 +26,7 @@ const Login = () => {
   }, [user]);
 
   return (
-    <div className='w-full min-h-screen flex items-center justify-center flex-col lg:flex-row bg-[#f3f4f6] dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#302943] via-slate-900 to-black'>
+    <div className='w-full min-h-screen flex items-center justify-center flex-col lg:flex-row bg-[#f3f4f6] dark:bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-[#302943] via-slate-900 to-black'>
       <div className='w-full md:w-auto flex gap-0 md:gap-40 flex-col md:flex-row items-center justify-center'>
         <div className='h-full w-full lg:w-2/3 flex flex-col items-center justify-center'>
           <div className='w-full md:max-w-lg 2xl:max-w-3xl flex flex-col items-center justify-center gap-5 md:gap-y-10 2xl:-mt-20'>
@@ -53,10 +44,10 @@ const Login = () => {
           </div>
         </div>
 
-        <div className='w-full md:w-1/3 p-4 md:p-1 flex flex-col justify-center items-center'>
+        <div className='w-full md:w-2/3 lg:w-1/2 p-4 md:p-6 flex flex-col justify-center items-center'>
           <form
-            onSubmit={handleSubmit(handleLogin)}
-            className='form-container w-full md:w-100 flex flex-col gap-y-8 bg-white dark:bg-slate-900 px-10 pt-14 pb-14'
+            onSubmit={handleSubmit(submitHabndler)}
+            className='form-container w-full flex flex-col gap-y-8 bg-white dark:bg-slate-900 px-10 pt-14 pb-14 rounded-lg shadow-md'
           >
             <div>
               <p className='text-blue-600 text-3xl font-bold text-center'>
