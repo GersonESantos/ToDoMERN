@@ -1,0 +1,29 @@
+
+> client@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mÔ£ô[39m 922 modules transformed.
+Ô£ù Build failed in 2.57s
+error during build:
+src/pages/Dashboard.jsx (6:9): "LuClipboardEdit" is not exported by "node_modules/react-icons/lu/index.mjs", imported by "src/pages/Dashboard.jsx".
+file: C:/Repo2026/todoAntigra260112/client/src/pages/Dashboard.jsx:6:9
+
+4: import { FaNewspaper } from "react-icons/fa";
+5: import { FaArrowsToDot } from "react-icons/fa6";
+6: import { LuClipboardEdit } from "react-icons/lu";
+            ^
+7: import {
+8:   MdAdminPanelSettings,
+
+    at getRollupError (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at Module.error (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:17022:16)
+    at Module.traceVariable (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:17478:29)
+    at ModuleScope.findVariable (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:15141:39)
+    at ReturnValueScope.findVariable (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:5688:38)
+    at FunctionBodyScope.findVariable (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:5688:38)
+    at Identifier.bind (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:5462:40)
+    at CallExpression.bind (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:2825:28)
+    at CallExpression.bind (file:///C:/Repo2026/todoAntigra260112/client/node_modules/rollup/dist/es/shared/node-entry.js:12172:15)
