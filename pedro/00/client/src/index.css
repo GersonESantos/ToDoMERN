@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@theme {
+    --deepblue-500: #023047;
+    --deepblue-700: #011627;
+    --deepblue-900: #001219;
+    --amber-500: #fb8500;
+    --albaster-500: #e0e1dd;
+
+}
+
+.bg-deepblue {
+    background-color: var(--deepblue-500);
+}
+.bg-deepblue-700 {
+    background-color: var(--deepblue-700);
+}
+.bg-amber {
+    background-color: var(--amber-500);
+}
+.bg-albaster {
+    background-color: var(--albaster-500);
+}
+@utility container {
+    pedding: 20px;
+    max-width: 1280px;
+    margin: auto;
+}
+@source './node_modules/tailwindcss-animate/index.css';
+
+@plugin 'tailwindcss-animate'; 
+
+
+
